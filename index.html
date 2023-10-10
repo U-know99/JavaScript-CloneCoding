@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Challenge</title>
+    <meta charset="UTF-8" />
+    <style>
+      .hidden {
+        display: none;
+      }
+      .display-number {
+        display: flex;
+      }
+      .chioce-box {
+        display: flex;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Random Number Game</h1>
+    <form id="onSubmit-userNumber">
+      <h2>
+        Generate a number between 0 and
+        <input class="userNumberInput" type="number" min="1" required />
+      </h2>
+    </form>
+    <form id="onSubmit-guessNumber">
+      Guess the number:
+      <input class="guessNumber" type="number" required />
+      <button type="submit" class="playButton">Play!</button>
+    </form>
+    <div class="chioce-box">
+      You chose:
+      <div class="userChoice"></div>
+      , the machine chose:
+      <div class="machineChoice"></div>
+    </div>
+
+    <div class="won hidden">You won!</div>
+    <div class="lost hidden">You lost!</div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
